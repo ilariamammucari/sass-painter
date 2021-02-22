@@ -1,6 +1,6 @@
 header {
     width: 100%;
-    height: 100px;
+    height: $h-100;
     background-color: $c-black;
     @include contenitore;
     .top {

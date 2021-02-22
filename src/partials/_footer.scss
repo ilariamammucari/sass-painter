@@ -1,0 +1,48 @@
+footer {
+    padding-top: $p-50;
+    @include contenitore;
+    .contenitore {
+        @include flex(space-around);
+    }
+    .box-lista {
+        padding-bottom: $p-40;
+        ul {
+            li {
+                line-height: 2;
+                a {
+                    color: $c-gray;
+                }
+                &:hover a {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .bottom {
+        background-color: $c-darkgray;
+        height: $h-100;
+        @include contenitore;
+        .left {
+            width: $calc-2;
+            img {
+                padding-left: $p-10;
+            }
+        }
+        .right {
+            width: $calc-2;
+            ul {
+                @include flex();
+                li {
+                    padding-left: $p-10;
+                    a {
+                        color: $c-gray;
+                    }
+                    &:hover a {
+                        color: $c-white;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

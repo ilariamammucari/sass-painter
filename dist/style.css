@@ -160,3 +160,64 @@ main #painting-possibilities .articoli .articolo strong {
 main #painting-possibilities .articoli .articolo small {
   color: royalblue;
 }
+
+footer {
+  padding-top: 50px;
+}
+footer .contenitore {
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+}
+footer .contenitore {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .box-lista {
+  padding-bottom: 40px;
+}
+footer .box-lista ul li {
+  line-height: 2;
+}
+footer .box-lista ul li a {
+  color: gray;
+}
+footer .box-lista ul li:hover a {
+  text-decoration: underline;
+}
+footer .bottom {
+  background-color: #3c3c3c;
+  height: 100px;
+}
+footer .bottom .contenitore {
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+}
+footer .bottom .left {
+  width: calc(100% / 2);
+}
+footer .bottom .left img {
+  padding-left: 10px;
+}
+footer .bottom .right {
+  width: calc(100% / 2);
+}
+footer .bottom .right ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+footer .bottom .right ul li {
+  padding-left: 10px;
+}
+footer .bottom .right ul li a {
+  color: gray;
+}
+footer .bottom .right ul li:hover a {
+  color: #fff;
+  text-decoration: underline;
+}
