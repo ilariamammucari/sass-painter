@@ -25,7 +25,7 @@ header {
             @include flex();
             height: 100%;
             li {
-                padding: $p-20;
+                padding: 16px $p-20;
                 a {
                     color: $c-white;
                 }

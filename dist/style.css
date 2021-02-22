@@ -52,7 +52,7 @@ header .bottom ul {
   height: 100%;
 }
 header .bottom ul li {
-  padding: 20px;
+  padding: 16px 20px;
 }
 header .bottom ul li a {
   color: #fff;
@@ -63,6 +63,34 @@ header .bottom ul li:hover:not(:first-child) {
 }
 header .bottom ul li:hover:not(:first-child) a {
   color: #000;
+}
+
+header .bottom ul li {
+  position: relative;
+}
+header .bottom ul li:hover .drop-down {
+  display: block;
+}
+header .bottom ul li .drop-down {
+  width: 200px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: none;
+}
+header .bottom ul li .drop-down ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px 0;
+}
+header .bottom ul li .drop-down ul li {
+  width: 100%;
+}
+header .bottom ul li .drop-down ul li:hover {
+  background-color: gray;
 }
 
 .jumbo {

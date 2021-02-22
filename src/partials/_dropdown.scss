@@ -1,0 +1,28 @@
+header .bottom {
+    ul {
+        li {
+            position: relative;
+            &:hover .drop-down {
+                display: block;
+            }
+            .drop-down {
+                width: 200px;
+                background-color: $c-white;
+                position: absolute;
+                left: 0;
+                top: 100%;
+                display: none;
+                ul {
+                    @include flex(center,flex-start,column);
+                    padding: $p-10 0;
+                    li {
+                        width: 100%;
+                        &:hover {
+                            background-color: $c-gray;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
