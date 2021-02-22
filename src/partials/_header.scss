@@ -1,0 +1,42 @@
+header {
+    width: 100%;
+    height: 100px;
+    background-color: $c-black;
+    @include contenitore;
+    .top {
+        height: calc(100% / 2);
+        ul {
+            @include flex(flex-end);
+            height: 100%;
+            li {
+                padding-left: $p-10;
+                a {
+                    color: $c-gray;
+                }
+                &:hover a {
+                    color: $c-white;
+                }
+            }
+        }
+    }
+    .bottom {
+        height: calc(100% / 2);
+        ul {
+            @include flex();
+            height: 100%;
+            li {
+                padding: $p-20;
+                a {
+                    color: $c-white;
+                }
+                &:hover:not(:first-child) {
+                    background-color: #fff;
+                    cursor: pointer;
+                    a {
+                        color: $c-black;
+                    }
+                }
+            }
+        }
+    }
+}
