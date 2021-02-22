@@ -64,3 +64,57 @@ header .bottom ul li:hover:not(:first-child) {
 header .bottom ul li:hover:not(:first-child) a {
   color: #000;
 }
+
+.jumbo {
+  width: 100%;
+  height: 600px;
+  background-image: url("https://www.painterartist.com/static/ptr/images/home/bg-painter-home.jpg");
+  background-size: cover;
+}
+.jumbo .contenitore {
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+}
+.jumbo .box {
+  width: 100%;
+  padding: 100px 0;
+}
+.jumbo .box img {
+  width: 20%;
+  padding-bottom: 20px;
+}
+.jumbo .box h2 {
+  font-weight: lighter;
+  padding-bottom: 40px;
+  padding-right: 600px;
+}
+.jumbo .box p {
+  color: purple;
+  line-height: 1.6;
+}
+
+.bottoni {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 50px;
+}
+.bottoni button {
+  padding: 20px 30px;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid black;
+}
+.bottoni button:hover {
+  cursor: pointer;
+}
+.bottoni button:first-child {
+  background-color: #000;
+  color: #fff;
+  margin-right: 10px;
+}
+.bottoni button:first-child:hover {
+  background-color: #1a1a1a;
+}

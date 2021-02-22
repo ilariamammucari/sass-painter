@@ -1,0 +1,24 @@
+.jumbo {
+    width: 100%;
+    height: $h-600;
+    background-image: url('https://www.painterartist.com/static/ptr/images/home/bg-painter-home.jpg');
+    background-size: cover;
+    @include contenitore;
+    .box {
+        width: 100%;
+        padding: $p-100 0;
+        img {
+            width: 20%;
+            padding-bottom: $p-20;
+        }
+        h2 {
+            font-weight: lighter;
+            padding-bottom: $p-40;
+            padding-right: 600px;
+        }
+        p {
+            color: $c-purple;
+            line-height: 1.6;
+        }
+    }
+}

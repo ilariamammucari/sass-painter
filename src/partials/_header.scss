@@ -4,7 +4,7 @@ header {
     background-color: $c-black;
     @include contenitore;
     .top {
-        height: calc(100% / 2);
+        height: $calc-2;
         ul {
             @include flex(flex-end);
             height: 100%;
@@ -20,7 +20,7 @@ header {
         }
     }
     .bottom {
-        height: calc(100% / 2);
+        height: $calc-2;
         ul {
             @include flex();
             height: 100%;

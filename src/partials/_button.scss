@@ -1,0 +1,21 @@
+.bottoni {
+    @include flex();
+    padding-top: $p-50;
+    button {
+        padding: $p-20 $p-30;
+        background-color: transparent;
+        outline: none;
+        border: 2px solid black;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    button:first-child {
+        background-color: $c-black;
+        color: $c-white;
+        margin-right: $m-10;
+        &:hover {
+            background-color: lighten($c-black,10%);
+        }
+    }
+}
